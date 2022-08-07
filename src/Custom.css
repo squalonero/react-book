@@ -29,14 +29,15 @@ hr{
 .articles {
     flex: 1;
     display: flex;
+    flex-flow: row wrap;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .article {
     border: 1px solid #555;
     padding: 10px;
-    flex: 1;
+    /* Remove gap, padding and border perché cagano il cazzo */
+    flex: 1 calc(50% - 32px);
     display: flex;
     flex-direction: column;
 }
