@@ -1,10 +1,10 @@
-:root{
+:root {
     --sq-success: rgb(23, 166, 33);
     --sq-error: rgb(166, 23, 23);
     --sq-border-radius: 3px
 }
 
-hr{
+hr {
     margin: 5px 0;
 }
 
@@ -26,6 +26,7 @@ hr{
     margin: 20px auto;
 
 }
+
 .articles {
     flex: 1;
     display: flex;
@@ -37,7 +38,7 @@ hr{
     border: 1px solid #555;
     padding: 10px;
     /* Remove gap, padding and border perché cagano il cazzo */
-    flex: 1 calc(50% - 32px);
+    flex: 0 1 calc(50% - 32px);
     display: flex;
     flex-direction: column;
 }
@@ -60,27 +61,32 @@ hr{
     cursor: pointer;
 }
 
-.action.delete{
+.error {
+    background-color: var(--sq-error);
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--sq-border-radius);
+    margin-bottom: 10px;
+}
+
+.action.delete {
     background-color: var(--sq-error);
 }
 
-.action.restore{
+.action.restore {
     background-color: var(--sq-success);
 }
 
-.articles-group
-{
+.articles-group {
     display: flex;
 }
 
-.deleted-articles
-{
+.deleted-articles {
     padding: 0 10px;
     flex: 0 0 15%;
 }
 
-.deleted-article
-{
+.deleted-article {
     display: flex;
     margin: 3px 0;
 }

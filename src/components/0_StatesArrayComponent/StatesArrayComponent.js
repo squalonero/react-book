@@ -45,12 +45,16 @@ const StatesArrayComponent = () => {
   }
 
   return (
-    <ArticlesComponent
-      deletedArticles={deletedArticles}
-      articles={articles}
-      handleDelete={handleDelete}
-      handleRestore={handleRestore}
-    ></ArticlesComponent>
+    <div className="component">
+      <h2>useState hook with Array</h2>
+      <hr />
+      <ArticlesComponent
+        deletedArticles={deletedArticles}
+        articles={articles}
+        handleDelete={handleDelete}
+        handleRestore={handleRestore}
+      ></ArticlesComponent>
+    </div>
   )
 }
 
