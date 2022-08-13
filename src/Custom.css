@@ -1,92 +1,96 @@
 :root {
-    --sq-success: rgb(23, 166, 33);
-    --sq-error: rgb(166, 23, 23);
-    --sq-border-radius: 3px
+  --sq-success: rgb(23, 166, 33);
+  --sq-error: rgb(166, 23, 23);
+  --sq-border-radius: 3px;
 }
 
 hr {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .clicks {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .top-spacing {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .component {
-    padding: 10px;
-    border: 2px solid #eee;
-    margin: 20px auto;
-
+  padding: 10px;
+  border: 2px solid #eee;
+  margin: 20px auto;
 }
 
 .articles {
-    flex: 1;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
 }
 
 .article {
-    border: 1px solid #555;
-    padding: 10px;
-    /* Remove gap, padding and border perché cagano il cazzo */
-    flex: 0 1 calc(50% - 32px);
-    display: flex;
-    flex-direction: column;
+  border: 1px solid #555;
+  padding: 10px;
+  /* Remove gap, padding and border perché cagano il cazzo */
+  flex: 0 1 calc(50% - 32px);
+  display: flex;
+  flex-direction: column;
+}
+
+.article p {
+  margin-bottom: 10px;
 }
 
 .article .author {
-    margin-top: auto;
+  margin-top: auto;
+  padding: 10px 5px;
+  background: #fcfcfc;
 }
 
 .action {
-    margin-left: auto;
-    border-radius: var(--sq-border-radius);
-    color: #fff;
-    border-style: solid;
-    border-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    padding: 1px 3px;
-    cursor: pointer;
+  margin-left: auto;
+  border-radius: var(--sq-border-radius);
+  color: #fff;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 1px 3px;
+  cursor: pointer;
 }
 
 .error {
-    background-color: var(--sq-error);
-    color: #fff;
-    padding: 10px;
-    border-radius: var(--sq-border-radius);
-    margin-bottom: 10px;
+  background-color: var(--sq-error);
+  color: #fff;
+  padding: 10px;
+  border-radius: var(--sq-border-radius);
+  margin-bottom: 10px;
 }
 
 .action.delete {
-    background-color: var(--sq-error);
+  background-color: var(--sq-error);
 }
 
 .action.restore {
-    background-color: var(--sq-success);
+  background-color: var(--sq-success);
 }
 
 .articles-group {
-    display: flex;
+  display: flex;
 }
 
 .deleted-articles {
-    padding: 0 10px;
-    flex: 0 0 15%;
+  padding: 0 10px;
+  flex: 0 0 15%;
 }
 
 .deleted-article {
-    display: flex;
-    margin: 3px 0;
+  display: flex;
+  margin: 3px 0;
 }

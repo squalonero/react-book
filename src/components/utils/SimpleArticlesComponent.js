@@ -8,7 +8,7 @@ export const SimpleArticlesComponent = ({ articles }) => {
           <div className="article" key={article.id}>
             <h3>{article.title}</h3>
             <p>{article.body}</p>
-            <small className="author">Author: {article.author}</small>
+            <small className="author">Author: {article.author || 'unknown'}</small>
           </div>
         ))}
       </div>

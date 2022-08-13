@@ -2,13 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
   //  StrictMode is a feature that helps you to prevent bugs and improve performance.
   //  StrictMode runs everything twice: first in production mode, and then in development mode.
-  <App />
+  <Router>
+    <App />
+  </Router>
   // </React.StrictMode>
 )
 
