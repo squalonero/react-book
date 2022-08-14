@@ -16,6 +16,7 @@ const Navbar = () => {
         <Link to="/">Home</Link>
         <Link to="/promise">Promise</Link>
         <Link to="/posts">Posts</Link>
+        <Link to="/new">New</Link>
       </div>
     </nav>
   )
