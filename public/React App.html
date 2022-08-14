@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap);</style><style>:root {
+  --sq-primary: #890303;
+  --sq-success: rgb(23, 166, 33);
+  --sq-error: rgb(166, 23, 23);
+  --sq-border-radius: 3px;
+}
+/* base styles */
+* {
+  margin: 0;
+  font-family: 'Quicksand';
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: var(--sq-primary);
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: var(--sq-primary);
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLDhCQUE4QjtFQUM5Qiw0QkFBNEI7RUFDNUIsdUJBQXVCO0FBQ3pCO0FBQ0EsZ0JBQWdCO0FBQ2hCO0VBQ0UsU0FBUztFQUNULHdCQUF3QjtFQUN4QixXQUFXO0FBQ2I7QUFDQTtFQUNFLGFBQWE7RUFDYixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2QsZ0NBQWdDO0FBQ2xDO0FBQ0E7RUFDRSx3QkFBd0I7QUFDMUI7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLHFCQUFxQjtFQUNyQixZQUFZO0FBQ2Q7QUFDQTtFQUNFLHdCQUF3QjtBQUMxQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixhQUFhO0FBQ2YiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1RdWlja3NhbmQ6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCcpO1xuOnJvb3Qge1xuICAtLXNxLXByaW1hcnk6ICM4OTAzMDM7XG4gIC0tc3Etc3VjY2VzczogcmdiKDIzLCAxNjYsIDMzKTtcbiAgLS1zcS1lcnJvcjogcmdiKDE2NiwgMjMsIDIzKTtcbiAgLS1zcS1ib3JkZXItcmFkaXVzOiAzcHg7XG59XG4vKiBiYXNlIHN0eWxlcyAqL1xuKiB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6ICdRdWlja3NhbmQnO1xuICBjb2xvcjogIzMzMztcbn1cbi5uYXZiYXIge1xuICBwYWRkaW5nOiAyMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtYXgtd2lkdGg6IDYwMHB4O1xuICBtYXJnaW46IDAgYXV0bztcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNmMmYyZjI7XG59XG4ubmF2YmFyIGgxIHtcbiAgY29sb3I6IHZhcigtLXNxLXByaW1hcnkpO1xufVxuLm5hdmJhciAubGlua3Mge1xuICBtYXJnaW4tbGVmdDogYXV0bztcbn1cbi5uYXZiYXIgYSB7XG4gIG1hcmdpbi1sZWZ0OiAxNnB4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIHBhZGRpbmc6IDZweDtcbn1cbi5uYXZiYXIgYTpob3ZlciB7XG4gIGNvbG9yOiB2YXIoLS1zcS1wcmltYXJ5KTtcbn1cbi5jb250ZW50IHtcbiAgbWF4LXdpZHRoOiA2MDBweDtcbiAgbWFyZ2luOiA0MHB4IGF1dG87XG4gIHBhZGRpbmc6IDIwcHg7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.heading-wrapper {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.heading-wrapper img {
+  max-width: 20%;
+  flex: 0 1 20%;
+}
+.heading-wrapper > * {
+  flex: 1 1;
+}
+hr {
+  margin: 5px 0;
+}
+
+.clicks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.top-spacing {
+  margin-top: 10px;
+}
+
+.component {
+  padding: 10px;
+  border: 2px solid #eee;
+  margin: 20px auto;
+}
+
+.articles {
+  flex: 1 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.article {
+  border: 1px solid #555;
+  padding: 10px;
+  /* Remove gap, padding and border perché cagano il cazzo */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 32px);
+  display: flex;
+  flex-direction: column;
+}
+
+.article p {
+  margin-bottom: 10px;
+}
+
+.article .author {
+  margin-top: auto;
+  padding: 10px 5px;
+  background: #fcfcfc;
+}
+
+.action {
+  margin-left: auto;
+  border-radius: var(--sq-border-radius);
+  color: #fff;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 1px 3px;
+  cursor: pointer;
+}
+
+.error {
+  background-color: var(--sq-error);
+  color: #fff;
+  padding: 10px;
+  border-radius: var(--sq-border-radius);
+  margin-bottom: 10px;
+}
+
+.action.delete {
+  background-color: var(--sq-error);
+}
+
+.action.restore {
+  background-color: var(--sq-success);
+}
+
+.articles-group {
+  display: flex;
+}
+
+.deleted-articles {
+  padding: 0 10px;
+  flex: 0 0 15%;
+}
+
+.deleted-article {
+  display: flex;
+  margin: 3px 0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border-radius: var(--sq-border-radius);
+  border-style: solid;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9DdXN0b20uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsU0FBUztBQUNYO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsYUFBYTtBQUNmO0FBQ0E7RUFDRSxTQUFPO0FBQ1Q7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsU0FBUztFQUNULGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsU0FBTztFQUNQLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsU0FBUztBQUNYOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLGFBQWE7RUFDYiwwREFBMEQ7RUFDMUQsWUFBMEI7RUFBMUIsY0FBMEI7RUFBMUIsNEJBQTBCO0VBQzFCLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixzQ0FBc0M7RUFDdEMsV0FBVztFQUNYLG1CQUFtQjtFQUNuQix5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsaUNBQWlDO0VBQ2pDLFdBQVc7RUFDWCxhQUFhO0VBQ2Isc0NBQXNDO0VBQ3RDLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGlDQUFpQztBQUNuQzs7QUFFQTtFQUNFLG1DQUFtQztBQUNyQzs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGVBQWU7RUFDZixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsYUFBYTtBQUNmOztBQUVBO0VBQ0Usc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxzQ0FBc0M7RUFDdEMsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGluZy13cmFwcGVyIHtcbiAgbWFyZ2luOiAxNXB4IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGdhcDogMjBweDtcbn1cbi5oZWFkaW5nLXdyYXBwZXIgaW1nIHtcbiAgbWF4LXdpZHRoOiAyMCU7XG4gIGZsZXg6IDAgMSAyMCU7XG59XG4uaGVhZGluZy13cmFwcGVyID4gKiB7XG4gIGZsZXg6IDE7XG59XG5ociB7XG4gIG1hcmdpbjogNXB4IDA7XG59XG5cbi5jbGlja3Mge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBnYXA6IDEwcHg7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi50b3Atc3BhY2luZyB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi5jb21wb25lbnQge1xuICBwYWRkaW5nOiAxMHB4O1xuICBib3JkZXI6IDJweCBzb2xpZCAjZWVlO1xuICBtYXJnaW46IDIwcHggYXV0bztcbn1cblxuLmFydGljbGVzIHtcbiAgZmxleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1mbG93OiByb3cgd3JhcDtcbiAgZ2FwOiAxMHB4O1xufVxuXG4uYXJ0aWNsZSB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICM1NTU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIC8qIFJlbW92ZSBnYXAsIHBhZGRpbmcgYW5kIGJvcmRlciBwZXJjaMOpIGNhZ2FubyBpbCBjYXp6byAqL1xuICBmbGV4OiAwIDEgY2FsYyg1MCUgLSAzMnB4KTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmFydGljbGUgcCB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5hcnRpY2xlIC5hdXRob3Ige1xuICBtYXJnaW4tdG9wOiBhdXRvO1xuICBwYWRkaW5nOiAxMHB4IDVweDtcbiAgYmFja2dyb3VuZDogI2ZjZmNmYztcbn1cblxuLmFjdGlvbiB7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1zcS1ib3JkZXItcmFkaXVzKTtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci1zdHlsZTogc29saWQ7XG4gIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBsaW5lLWhlaWdodDogMTtcbiAgcGFkZGluZzogMXB4IDNweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uZXJyb3Ige1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1zcS1lcnJvcik7XG4gIGNvbG9yOiAjZmZmO1xuICBwYWRkaW5nOiAxMHB4O1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1zcS1ib3JkZXItcmFkaXVzKTtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cblxuLmFjdGlvbi5kZWxldGUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1zcS1lcnJvcik7XG59XG5cbi5hY3Rpb24ucmVzdG9yZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXNxLXN1Y2Nlc3MpO1xufVxuXG4uYXJ0aWNsZXMtZ3JvdXAge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4uZGVsZXRlZC1hcnRpY2xlcyB7XG4gIHBhZGRpbmc6IDAgMTBweDtcbiAgZmxleDogMCAwIDE1JTtcbn1cblxuLmRlbGV0ZWQtYXJ0aWNsZSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1hcmdpbjogM3B4IDA7XG59XG5cbmJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzMzM7XG4gIGNvbG9yOiAjZmZmO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1zcS1ib3JkZXItcmFkaXVzKTtcbiAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body cz-shortcut-listen="true">
+    <!--
+
+                           __
+   _________ ___  ______ _/ /___  ____  ___  _________
+  / ___/ __ `/ / / / __ `/ / __ \/ __ \/ _ \/ ___/ __ \
+ (__  ) /_/ / /_/ / /_/ / / /_/ / / / /  __/ /  / /_/ /
+/____/\__, /\__,_/\__,_/_/\____/_/ /_/\___/_/   \____/
+        /_/
+
+                                                  ▓▓██▓▓▒▒▓▓
+                                        ▒▒▒▒▒▒░░░░▒▒                                            ▓▓▓▓
+                                      ██▒▒▒▒▒▒░░░░▒▒                                        ▒▒▒▒▓▓
+                                    ██▒▒▒▒▒▒▒▒▒▒▒▒                                      ░░▒▒▒▒▓▓
+                              ▓▓▓▓▓▓▓▓████████████▓▓▓▓▓▓▓▓▓▓          ██              ▒▒▒▒▒▒▒▒▓▓
+                    ▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓    ████          ▒▒▒▒▒▒▒▒▓▓
+              ▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▓▓▓▓██████      ▒▒░░▒▒▒▒▓▓
+          ▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▓▓
+    ▒▒▓▓▒▒▒▒░░░░░░▓▓        ░░░░▓▓░░░░▒▒▒▒░░▒▒▒▒                              ░░▒▒▒▒░░▓▓▒▒
+    ▒▒▒▒░░░░░░░░  ░░░░      ░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒░░▓▓
+      ░░▒▒░░██▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▒▒▓▓      ▒▒▒▒▓▓▒▒
+          ▓▓██▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░    ▒▒▓▓██      ▒▒▒▒▒▒▓▓
+              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓          ██████        ▒▒▒▒██    ▓▓▒▒▒▒▓▓
+                            ██████████                        ▓▓▓▓▒▒                  ▓▓▒▒░░▒▒
+                            ▓▓▒▒▒▒▒▒▓▓                                                  ▒▒▓▓██████
+                              ▓▓▓▓▒▒▓▓
+                                ░░▒▒
+
+    -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav class="navbar"><h1>From Monkey to React</h1><div class="links"><a href="http://localhost:3000/">Home</a><a href="http://localhost:3000/promise">Promise</a><a href="http://localhost:3000/create">Create</a></div></nav><div class="content"><div class="home"><h2>Simple Stuff</h2><div class="heading-wrapper"><img src="./React App_files/australopithecus-afarensis.fb7e0e5f167f52c48a00.jpeg" alt="Australopitecus Africanus"><h4>Level 1: Australopitecus Africanus</h4></div><div class="clicks-wrapper component"><h2>Click handlers</h2><div class="clicks"><button>Normal Click</button><button>Normal Click(e)</button><button>Parameter Click</button></div><p class="top-spacing">Check the console for results.</p></div><div class="component"><h2>useState hook</h2><hr><div class="states"><h3 class="top-spacing">State: initial State</h3><h3 class="top-spacing">Name: initial Name</h3><h3 class="top-spacing">Age: 28</h3><button class="top-spacing">Modify the simple States</button></div></div><div class="component"><h2>Example prop component</h2><button type="button" class="top-spacing c2">this is an example prop component</button></div><div class="component"><h2>useState hook with Array</h2><hr><div class="states articles-group"><div class="array-states articles"><div class="article"><button class="action delete" type="button">x</button><h3>foo</h3><p>This is foo</p><small class="author">Author: lil angels</small></div><div class="article"><button class="action delete" type="button">x</button><h3>bar</h3><p>This is bar</p><small class="author">Author: er luce</small></div><div class="article"><button class="action delete" type="button">x</button><h3>baz</h3><p>This is baz</p><small class="author">Author: beluga</small></div><div class="article"><button class="action delete" type="button">x</button><h3>lol</h3><p>This is lol</p><small class="author">Author: er truce</small></div></div><div class="deleted-articles"><h6>Deleted</h6></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

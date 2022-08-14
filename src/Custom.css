@@ -1,9 +1,16 @@
-:root {
-  --sq-success: rgb(23, 166, 33);
-  --sq-error: rgb(166, 23, 23);
-  --sq-border-radius: 3px;
+.heading-wrapper {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-
+.heading-wrapper img {
+  max-width: 20%;
+  flex: 0 1 20%;
+}
+.heading-wrapper > * {
+  flex: 1;
+}
 hr {
   margin: 5px 0;
 }
@@ -93,4 +100,20 @@ hr {
 .deleted-article {
   display: flex;
   margin: 3px 0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border-radius: var(--sq-border-radius);
+  border-style: solid;
+  border-color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 250ms;
+}
+
+button:hover:not(.action) {
+  background-color: #555;
+  border-color: #555;
 }

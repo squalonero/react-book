@@ -7,6 +7,13 @@ const Home = () => {
   return (
     <div className="home">
       <h2>Simple Stuff</h2>
+      <div className="heading-wrapper">
+        <img
+          src={require('../assets/img/australopithecus-afarensis.jpeg')}
+          alt="Australopitecus Africanus"
+        />
+        <h4>Level 1: Australopitecus Africanus</h4>
+      </div>
       <ClicksComponent></ClicksComponent>
       <StatesComponent></StatesComponent>
       <PropComponent
