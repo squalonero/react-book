@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const SimpleArticlesComponent = ({ articles }) => {
+const SimpleArticlesComponent = ({ articles }) => {
   return (
     <div className="states articles-group">
       <div className="array-states articles">
@@ -15,3 +15,5 @@ export const SimpleArticlesComponent = ({ articles }) => {
     </div>
   )
 }
+
+export default SimpleArticlesComponent

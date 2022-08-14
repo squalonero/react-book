@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { SimpleArticlesComponent } from '../utils/SimpleArticlesComponent'
+import SimpleArticlesComponent from '../utils/SimpleArticlesComponent'
 
 /**
  *

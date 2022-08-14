@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArticlesComponent } from '../utils/ArticlesComponent'
+import ArticlesComponent from '../utils/ArticlesComponent'
 
 /**
  *

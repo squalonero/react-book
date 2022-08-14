@@ -58,6 +58,11 @@ hr {
   background: #fcfcfc;
 }
 
+.article .readmore {
+  margin-top: auto;
+  text-decoration: none;
+}
+
 .action {
   margin-left: auto;
   border-radius: var(--sq-border-radius);

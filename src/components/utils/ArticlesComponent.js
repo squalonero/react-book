@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ArticlesComponent = ({
+const ArticlesComponent = ({
   articles,
   deletedArticles,
   handleDelete,
@@ -43,3 +43,5 @@ export const ArticlesComponent = ({
     </div>
   )
 }
+
+export default ArticlesComponent

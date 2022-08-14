@@ -3,8 +3,9 @@ import './Custom.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
-import Create from './components/Create'
 import UseEffectPromiseComponent from './components/1_UseEffectPromiseComponent/UseEffectPromiseComponent'
+import ParameterRouteComponent from './components/3_ParameterRouteComponent/ParameterRouteComponent'
+import RouterArticlesComponent from './components/utils/RouterArticlesComponent'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/promise" element={<UseEffectPromiseComponent />} />
-          <Route path="/create" element={<Create />} />
+          <Route path="/posts" element={<RouterArticlesComponent />} />
+          <Route path="/post/:id" element={<ParameterRouteComponent />} />
         </Routes>
       </div>
     </div>
